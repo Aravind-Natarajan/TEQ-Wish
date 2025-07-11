@@ -12,7 +12,7 @@ connectDB();
 
 // Enable CORS
 app.use(cors({
-  origin: 'https://teq-wish.netlify.app/',
+  origin: 'https://teq-wish.netlify.app',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 }));
@@ -21,7 +21,7 @@ app.use(express.urlencoded({ limit: '50mb', extended: true }));
 
 // Optional fallback CORS headers
 app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', 'https://teq-wish.netlify.app/');
+  res.header('Access-Control-Allow-Origin', 'https://teq-wish.netlify.app');
   res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
   res.header('Access-Control-Allow-Headers', 'Content-Type');
   next();
