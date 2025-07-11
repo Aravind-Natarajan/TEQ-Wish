@@ -1,0 +1,228 @@
+/* Container styling */
+.add-student-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 25px;
+  background: linear-gradient(135deg, #e0f7fa, #f1f8e9);
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  animation: slideIn 0.6s ease;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Heading */
+.form-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: #00796b;
+}
+
+/* Form group */
+.student-form .form-group {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels */
+.student-form label {
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #333;
+  font-size: 1rem;
+}
+
+/* Inputs */
+.student-form input[type="text"],
+.student-form input[type="email"],
+.student-form input[type="date"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.student-form input:focus {
+  border-color: #00796b;
+  box-shadow: 0 0 5px rgba(0, 121, 107, 0.3);
+  outline: none;
+}
+
+/* Custom File Input */
+.student-form input[type="file"] {
+  display: none;
+}
+
+.custom-file {
+  background-color: #fff;
+  border: 2px dashed #00796b;
+  padding: 12px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  color: #00796b;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.custom-file:hover {
+  background-color: #e0f2f1;
+  transform: scale(1.02);
+}
+
+/* Buttons */
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.submit-btn,
+.clear-btn {
+  flex: 1;
+  margin: 0 5px;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn {
+  background-color: #00796b;
+  color: white;
+}
+
+.clear-btn {
+  background-color: #d32f2f;
+  color: white;
+}
+
+.submit-btn:hover,
+.clear-btn:hover {
+  transform: scale(1.05);
+}
+.form-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.half {
+  flex: 1;
+  min-width: 200px;
+}
+
+
+/* .error-msg {
+  color: #d32f2f;
+  background: #fdecea;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.success-msg {
+  color: #2e7d32;
+  background: #e8f5e9;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  text-align: center;
+} */
+
+.error-msg {
+  color: red;
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
+
+.success-msg {
+  color: green;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.file-name {
+  font-size: 0.85rem;
+  margin-top: 4px;
+  color: #333;
+}
+
+
+
+/* Entry animation */
+@keyframes slideIn {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .add-student-container {
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  .form-title {
+    font-size: 1.8rem;
+  }
+
+  .student-form label {
+    font-size: 0.95rem;
+  }
+
+  .student-form input {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .form-buttons {
+    flex-direction: column;
+  }
+
+  .submit-btn,
+  .clear-btn {
+    margin: 5px 0;
+    font-size: 0.95rem;
+  }
+
+  .form-title {
+    font-size: 1.6rem;
+  }
+
+  .student-form label {
+    font-size: 0.9rem;
+  }
+
+  .custom-file {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-title {
+    font-size: 1.4rem;
+  }
+
+  .student-form label {
+    font-size: 0.85rem;
+  }
+
+  .submit-btn,
+  .clear-btn {
+    font-size: 0.9rem;
+  }
+}

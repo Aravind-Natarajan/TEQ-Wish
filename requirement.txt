@@ -1,0 +1,29 @@
+Frontend npm packages :
+
+npm install axios
+npm install canvas-confetti
+npm install file-saver
+npm install framer-motion
+npm install react-confetti
+npm install react-icons
+npm install react-multi-carousel
+npm install react-router-dom
+npm install swiper
+
+Backend npm packages :
+
+npm install archiver
+npm install axios
+npm install cors
+npm install cron
+npm install dotenv
+npm install exceljs
+npm install express
+npm install fs-extra
+npm install moment
+npm install mongoose
+npm install multer
+npm install node-cron
+npm install nodemailer
+npm install uuid
+

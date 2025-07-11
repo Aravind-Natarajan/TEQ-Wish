@@ -1,0 +1,23 @@
+name: Send Daily Wish
+
+on:
+  schedule:
+    - cron: '*/1 * * * *'     # Every minute (testing)
+  workflow_dispatch:
+
+jobs:
+  sendWish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Wake up Render
+        run: |
+          echo "🌅 Waking up backend..."
+          curl -s https://teq-wish.onrender.com/
+          echo "⏳ Waiting for backend to warm up..."
+          sleep 15
+
+      - name: Call Wish API
+        run: |
+          echo "📡 Sending wish..."
+          curl -v --retry 5 --retry-delay 10 --retry-all-errors -X POST https://teq-wish.onrender.com/api/students/birthday

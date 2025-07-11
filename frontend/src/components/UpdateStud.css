@@ -1,0 +1,191 @@
+/* Container */
+.update-student-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background-color: #fefefe;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Title */
+.form-title {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+/* Messages */
+.error-msg {
+  color: red;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.success-msg {
+  color: green;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+/* Form Group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+}
+
+.form-group input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+/* Retrieve button */
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.retrieve-btn {
+  padding: 0.55rem 1rem;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.retrieve-btn:hover {
+  background-color: #2563eb;
+}
+
+/* File upload */
+input[type="file"] {
+  display: none;
+}
+
+.custom-file {
+  background-color: #f3f4f6;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  display: inline-block;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+
+.file-name {
+  font-size: 0.9rem;
+  color: #444;
+}
+
+/* Buttons */
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.btn {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.image-row .image-upload-preview {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.upload-btn-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-preview img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.update-btn {
+  background-color: #10b981;
+  color: white;
+}
+
+.update-btn:hover {
+  background-color: #059669;
+  transform: scale(1.03);
+}
+
+.delete-btn {
+  background-color: #ef4444;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.delete-btn:hover {
+  background-color: #dc2626;
+  transform: scale(1.03);
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .update-student-container {
+    padding: 1rem;
+  }
+
+  .form-buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .form-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .form-group input,
+  .retrieve-btn {
+    width: 100%;
+  }
+
+  .retrieve-btn {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-title {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    font-size: 0.95rem;
+    padding: 0.5rem 1rem;
+  }
+}
