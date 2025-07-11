@@ -163,7 +163,7 @@ router.post('/students/download', async (req, res) => {
 
 router.post('/students/birthday', async (req, res) => {
   const { students } = req.body;
-
+  console.log("Running 12 mani");
   if (!students || students.length === 0) {
     return res.status(400).json({ error: 'No students provided' });
   }
