@@ -8,7 +8,9 @@ import UpdateStud from "./components/UpdateStud";
 
 function App() {
   return (
-    <Router>
+      );
+}
+<Router>
       <Routes>
         <Route path="/" element={<SplashScreen />} />
         <Route path="/home" element={<Home />} />
@@ -21,7 +23,5 @@ function App() {
         </Route>
       </Routes>
     </Router>
-  );
-}
 
 export default App;
